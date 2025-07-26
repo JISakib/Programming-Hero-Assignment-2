@@ -145,7 +145,7 @@ main{
 }
 .plant-lover-img{
     position:relative;
-    flex: 1;
+    flex: auto;
 }
 .plant-lover-first-img{
     width: 650px;
@@ -153,11 +153,11 @@ main{
 }
 .trusted-badge{
    position: absolute;
-   width: 190px;
-   height: 190px;
+   width: 220px;
+   height: 220px;
    object-fit: contain;
-   top:-80px;
-   right: 300px;
+   top:-90px;
+   left: 520px;
 }
 .plant-lover-text{
     max-width: 540px;
@@ -323,11 +323,57 @@ main{
     .header{
     margin: 0 auto;
     }
+    .navbar{
+        margin: 0;
+        padding: 0 20px;
+    }
+    .nav-img{
+        width: 63px;
+        height: auto;
+    }
+
     .banner{
     flex-direction: column-reverse;
     }
+
+    .banner-title{
+        font-size: 1.75rem;
+    }
+    .banner-description{
+        margin: 0 auto;
+    }
     .banner-img{
-      width: 100%;
+      width: 394px;
+      height: auto;
+    }
+    /*plants section*/
+
+    .plant-cards-section{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        align-items: center;
+    }
+    .plants{
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+
+    .plant-lover{
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+
+    .plant-lover-first-img{
+        width: 358px;
+        height: auto;
+        margin: 0 0 0 0;
+    }
+
+    .join-banner,
+    .latest-deal,
+    .plant-lover,
+    .plants{
+          flex-direction: column;
     }
 
 .footer-container{
@@ -337,20 +383,20 @@ main{
     padding: 50px 20px;
 }  
 
+.latest-grid{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.latest-deal{
+    margin: 0;
+    padding: 0 20px 40px 20px;
+}
 
-.footer-center,.footer-right{
-    justify-content: flex-start;
-}
-.footer-center ul{
-    padding: 0;      
-    margin: 0;                
-}
-.join-banner,.join-banner h2,.join-form{
-    width: 100%;
-    height: 100%;
-}
 .join-banner{
+    padding: 50px 15px;
     align-items: center;
+    height: auto;
 }
 .join-banner h2{
     font-size: 1.5rem;
@@ -362,16 +408,33 @@ main{
     font-weight: 700;
     border: none;
 }
+.join-form input{
+    overflow: hidden;
+}
 .trusted-badge{
     display: none;
 }
-/*.latest-deal{
-    
+.latest-deal{
+    margin: 0 auto;
+    padding: 20px 30px;
 }
-.latest-grid{
-    
+
+.deal1,.deal2,.deal3{
+    width: 361px;
+    height: 184px;
 }
-*/}
+.deal1-title,.deal2-title,.deal3-title{
+    font-size: 1.25rem;
+}
+.footer-center,.footer-right{
+    justify-content: flex-start;
+}
+.footer-center ul{
+    padding: 0;      
+    margin: 0;                
+}
+
+}
 
 
 
