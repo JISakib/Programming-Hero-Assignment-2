@@ -44,7 +44,7 @@ main{
 .nav-link{
     text-decoration: none;
     font-weight: 400;
-    color: (137, 135, 161, 1)
+    color: rgba(137, 135, 161, 1)
 }
 .nav-link1{
     color: rgba(37, 36, 50, 1);
@@ -390,7 +390,14 @@ main{
 }
 .latest-deal{
     margin: 0;
-    padding: 0 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
+}
+.deal1,.deal2,.deal3{
+    width: 361px;
+    height: 184px;
+}
+.deal1-title,.deal2-title,.deal3-title{
+    font-size: 1.25rem;
 }
 
 .join-banner{
@@ -419,13 +426,7 @@ main{
     padding: 20px 30px;
 }
 
-.deal1,.deal2,.deal3{
-    width: 361px;
-    height: 184px;
-}
-.deal1-title,.deal2-title,.deal3-title{
-    font-size: 1.25rem;
-}
+
 .footer-center,.footer-right{
     justify-content: flex-start;
 }
